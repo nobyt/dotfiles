@@ -131,3 +131,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 source $HOME/.fzf-extras/fzf-extras.sh
+
+if [[ -r "${HOME}/.local/dotfiles/.zshrc" ]]; then
+  source "${HOME}/.local/dotfiles/.zshrc"
+fi
