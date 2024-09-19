@@ -135,3 +135,6 @@ source $HOME/.fzf-extras/fzf-extras.sh
 if [[ -r "${HOME}/.local/dotfiles/.zshrc" ]]; then
   source "${HOME}/.local/dotfiles/.zshrc"
 fi
+if [[ -r "${HOME}/.cargo/env" ]]; then
+	source "${HOME}/.cargo/env"
+fi
