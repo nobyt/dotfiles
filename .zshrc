@@ -30,3 +30,6 @@ if command -v gh > /dev/null 2>&1; then
   echo "gh completion"
     eval "$(gh completion -s zsh)"
 fi
+if [[ -r "${HOME}/.cargo/env" ]]; then
+	source "${HOME}/.cargo/env"
+fi
